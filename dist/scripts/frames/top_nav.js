@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <!-- Part 2: Navigation Tabs (default visible on larger screens) -->
                 <ul class="hidden sm:flex space-x-6 text-sm font-medium">
-                    <li><a href="#home" onclick="window.location.href='home.html';" class="hover:text-green-700">Home</a></li>
+                    <li><a href="#home" onclick="window.location.href='index.html';" class="hover:text-green-700">Home</a></li>
                     <li><a href="#recommendation" onclick="window.location.href='recommendation.html';" class="hover:text-green-700">Recommendation</a></li>
                     <li><a href="#media" onclick="window.location.href='media.html';" class="hover:text-green-700">Media</a></li>
                     <li><a href="#profile" onclick="window.location.href='profile.html';" class="hover:text-green-700">Profile</a></li>

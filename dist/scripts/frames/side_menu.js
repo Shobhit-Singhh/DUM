@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 <!-- Navigation Links -->
                 <ul class="space-y-6 text-lg font-medium pt-20">
-                    <li><a href="#home" onclick="window.location.href='/index.html';" class="hover:text-green-700">Home</a></li>
+                    <li><a href="#home" onclick="window.location.href='index.html';" class="hover:text-green-700">Home</a></li>
                     <li><a href="#recommendation" onclick="window.location.href='recommendation.html';" class="hover:text-green-700">Recommendation</a></li>
                     <li><a href="#media" onclick="window.location.href='media.html';" class="hover:text-green-700">Media</a></li>
                     <li><a href="#profile" onclick="window.location.href='profile.html';" class="hover:text-green-700">Profile</a></li>
