@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                         <div class='flex items-center justify-center mt-6 rounded-md '>
                             <img class="w-2/3 h-44" src="/assets/Recommendation/r5.avif" alt="">
-                            <img class="h-44" src="./assets/Recommendation/r6.avif" alt="">
+                            <img class="h-44" src="/assets/Recommendation/r6.avif" alt="">
                         </div>
                         <div class="p-4">
                             <h3 class="text-xl font-bold text-green-800">Media Recommendation</h3>
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <!-- Card 3 -->
                     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                         <div class='flex items-center justify-center mt-6 rounded-md '>
-                            <img class="h-44" src="./assets/Recommendation/r3.avif" alt="">
-                            <img class="h-44" src="./assets/Recommendation/r4.avif" alt="">
+                            <img class="h-44" src="/assets/Recommendation/r3.avif" alt="">
+                            <img class="h-44" src="/assets/Recommendation/r4.avif" alt="">
                         </div>
                         <div class="p-4">
                             <h3 class="text-xl font-bold text-green-800">Article</h3>
