@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="flex items-center space-x-4">
                     <!-- SOS Button -->
                     <button>
-                        <img onclick="window.location.href='sos.html';" class="h-10 w-10 object-contain" src="/assets/SOS Icon.png" alt="SOS">
+                        <img onclick="window.location.href='sos.html';" class="h-10 w-10 object-contain" src="./assets/SOS Icon.png" alt="SOS">
                     </button>
 
                     <!-- Hamburger Icon (visible only on small screens) -->
                     <button class="sm:hidden" onclick="toggleNav()">
-                        <img class="h-8 w-8 object-contain" src="/assets/hamburger icon.png" alt="menu">
+                        <img class="h-8 w-8 object-contain" src="./assets/hamburger icon.png" alt="menu">
                     </button>
                 </div>
             </div>
