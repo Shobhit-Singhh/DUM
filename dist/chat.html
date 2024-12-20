@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+    <!-- bars -->
+    <div>
+        <!-- Top Nav Bar -->
+        <script src="/dist/scripts/frames/top_nav.js"></script>
+
+        <!-- Right Side Menu (Initially hidden on small screens) -->
+        <script src="/dist/scripts/frames/side_menu.js"></script>
+
+        <!-- Bottom Nav Bar -->
+        <script src="/dist/scripts/frames/bottom_nav.js"></script>
+    </div>
+
+    <!-- contents -->
+    <div class="fixed bottom-full left-0 bg-green-500 m-6 flex flex-col items-center justify-center mt-32 rounded-xl transition-transform duration-300 ease-in-out z-30" id="chat">
+        <!-- Icon Section -->
+        <div class="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full z-30 -m-8">
+            <img 
+                class="w-8" 
+                src="/assets/Nav/Nav =Sage Bot.png" 
+                alt="AI chat">
+        </div>
+        
+        <!-- Chat Interface -->
+        <div class="mx-3 mt-10 w-96 bg-white rounded-lg shadow-lg flex flex-col mb-16">
+            <!-- Chat Display Area -->
+            <div class="p-4 h-[625px] overflow-y-scroll border-b space-y-4">
+                <!-- Simulated Chat Log -->
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> Hi! How can I assist you today?</p>
+                </div>
+                <div class="text-gray-900">
+                    <p><strong>You:</strong> I need help understanding my account statement.</p>
+                </div>
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> Sure, could you provide more details?</p>
+                </div>
+                <div class="text-gray-900">
+                    <p><strong>You:</strong> I noticed a charge I don’t recognize.</p>
+                </div>
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> I understand. Can you share the date and amount of the charge?</p>
+                </div>
+                <div class="text-gray-900">
+                    <p><strong>You:</strong> It's from November 10th for $120.</p>
+                </div>
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> Thank you! I’ll check that for you. One moment, please.</p>
+                </div>
+                <div class="text-gray-900">
+                    <p><strong>You:</strong> Okay, thank you.</p>
+                </div>
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> It seems this charge is from a subscription to “Premium Service.” Would you like me to cancel it?</p>
+                </div>
+                <div class="text-gray-900">
+                    <p><strong>You:</strong> Yes, please cancel it.</p>
+                </div>
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> The subscription has been canceled. Anything else I can help you with?</p>
+                </div>
+                <div class="text-gray-900">
+                    <p><strong>You:</strong> No, that’s all for now. Thanks!</p>
+                </div>
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> You’re welcome! Have a great day!</p>
+                </div>
+                <!-- Repeat messages to simulate longer chat -->
+                <div class="text-gray-900">
+                    <p><strong>You:</strong> Thank you, goodbye!</p>
+                </div>
+                <div class="text-gray-700">
+                    <p><strong>Bot:</strong> Goodbye!</p>
+                </div>
+                <!-- Add more messages here if needed -->
+            </div>
+            
+            <!-- Input Area -->
+            <div class="flex items-center p-4">
+                <input 
+                    type="text" 
+                    class="flex-grow p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400" 
+                    placeholder="Type your message here...">
+                <button 
+                    class="ml-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+
+</html>

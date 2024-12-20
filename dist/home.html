@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+    <!-- bars -->
+    <div>
+        <!-- Top Nav Bar -->
+        <script src="/dist/scripts/frames/top_nav.js"></script>
+
+        <!-- Right Side Menu (Initially hidden on small screens) -->
+        <script src="/dist/scripts/frames/side_menu.js"></script>
+
+        <!-- Bottom Nav Bar -->
+        <script src="/dist/scripts/frames/bottom_nav.js"></script>
+
+    </div>
+
+    <!-- contents -->
+    <div class="pt-14 pb-10">
+        <!-- background-image -->
+        <div class="absolute top-0 left-0 w-full h-full -z-10">
+            <img class="w-full h-full object-cover bg-green-50 opacity-50" src="/assets/Topographic bg.png"
+                alt="background">
+            <img class="w-full h-full object-cover bg-green-50 opacity-50" src="/assets/Topographic bg.png"
+                alt="background">
+        </div>
+
+        <!-- Hero Section -->
+        <div class="flex items-center justify-center">
+            <img class="w-full max-w-[500px]" src="/assets/Dashoard Card.png" alt="logo">
+        </div>
+
+        <!-- Main Section  -->
+        <div class=" border-2 m-3 pt-2 bg-pink-50 rounded-t-xl ">
+
+            <!-- Daily Journaling Prompts Section -->
+            <div class="m-4">
+                <div class="text-xl pb-2 flex  items-center">
+                    <a>Daily Journaling Prompts</a>
+                    <a class="ml-3">&#8594;</a>
+                </div>
+
+                <!-- Scrollable Container -->
+                <div class="overflow-x-auto">
+                    <!-- Cards Container -->
+                    <div id="prompt-cards-container" class="flex space-x-6 p-2"></div>
+                </div>
+            </div>
+
+            <script src="./scripts/home/cards.js"></script>
+
+            <!-- -------------------------------------------------------------------------- -->
+            <!-- Score Board Section -->
+            <div class="m-4 items-center">
+                <div class="text-xl pb-2 flex items-center">
+                    <a>Score Board</a>
+                    <a class="ml-3">&#8594;</a>
+                </div>
+                <!-- Score List -->
+                <div id="score-list"
+                    class=" m-1 py-4  bg-red-100 flex flex-wrap gap-4 items-center justify-normal rounded-xl shadow-lg">
+                    <!-- Dynamically added scores will go here -->
+                </div>
+            </div>
+
+            <script src="./scripts/home/scores.js"></script>
+
+            <!-- -------------------------------------------------------------------------- -->
+            <!-- Well Being Reminders Section -->
+            <div class="pt-2 m-4 items-center">
+                <div class="text-xl pb-2 flex items-center">
+                    <a>Well Being Reminders</a>
+                    <a class="ml-3">&#8594;</a>
+                </div>
+
+                <!-- Sliding Container -->
+                <div class="overflow-x-auto">
+                    <!-- Reminder Cards -->
+                    <div id="reminder-cards-container" class="flex space-x-6 p-2"></div>
+                </div>
+            </div>
+
+            <script src="./scripts/home/reminders.js"></script>
+
+            <!-- Calendar Section -->
+            <div class="flex flex-col justify-center m-4">
+                <div class="text-xl pb-2 flex items-center">
+                    <a>Calendar</a>
+                    <a class="ml-3">&#8594;</a>
+                </div>
+                <div class="items-center justify-center flex">
+                    <img class="max-w-[500px] w-full " src="/assets/calendar.png" alt="">
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="m-4 py-4 bg-pink-50 rounded-t-xl">
+                    <div class="text-xl flex items-center ps-4">
+                        <a href="#">Vitals</a>
+                        <a href="#" class="ml-3 text-blue-500">&#8594;</a>
+                    </div>
+                    <div id="image-caption-container" class="overflow-x-auto p-2 flex gap-4">
+                        <!-- Image cards will be inserted here dynamically -->
+                    </div>
+                    <script src="/dist/scripts/home/graphs.js"></script>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

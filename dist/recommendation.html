@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+    <!-- bars -->
+    <div>
+        <!-- Top Nav Bar -->
+        <script src="/dist/scripts/frames/top_nav.js"></script>
+
+        <!-- Right Side Menu (Initially hidden on small screens) -->
+        <script src="/dist/scripts/frames/side_menu.js"></script>
+
+        <!-- Bottom Nav Bar -->
+        <script src="/dist/scripts/frames/bottom_nav.js"></script>
+
+
+    </div>
+
+    <!-- contents -->
+    <div>
+        <!-- Recommendation -->
+
+        <!-- background-image -->
+        <div class="absolute top-0 left-0 w-full h-full -z-10">
+            <img class="w-full object-cover bg-green-50 opacity-50" src="/assets/Topographic bg.png" alt="background">
+            <img class="md:hidden object-cover bg-green-50 opacity-50" src="/assets/Topographic bg.png" alt="background">
+        </div>
+
+        <!-- journalling section -->
+        <section class="mt-[70px]">
+            <div class="flex items-center justify-center bg-emerald-100 py-4">
+                <!-- flex items-center justify-center bg-gradient-to-r from-olive to-orange py-4 -->
+                <div class="flex  flex-col items-center justify-center">
+                    <a class="text-lg text-green-800 " href="#">
+                        Daily Reflection
+                    </a>
+                    <h1 class="text-3xl font-bold text-center text-green-600 border-spacing-10">
+                        How do you feel about your current emotionals?
+                    </h1>
+                    <div class="flex items-center justify-center">
+                        <textarea class="w-96 h-32 p-2 mt-4 rounded-lg"
+                            placeholder="Write your thoughts here"></textarea>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <!-- Daily Journaling Prompts Section -->
+            <div class="m-4">
+                <div class="text-xl pb-2 flex  items-center">
+                    <a>Daily Journaling Prompts</a>
+                    <a class="ml-3">&#8594;</a>
+                </div>
+
+                <!-- Scrollable Container -->
+                <div class="overflow-x-auto">
+                    <!-- Cards Container -->
+                    <div id="prompt-cards-container" class="flex space-x-6 p-2"></div>
+                </div>
+            </div>
+
+            <script src="./scripts/home/cards.js"></script>
+        </section>
+
+        <script src="/dist/scripts/recommendations/recommendation.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+    <!-- bars -->
+    <div>
+        <!-- Top Nav Bar -->
+        <script src="/dist/scripts/frames/top_nav.js"></script>
+
+        <!-- Right Side Menu (Initially hidden on small screens) -->
+        <script src="/dist/scripts/frames/side_menu.js"></script>
+
+        <!-- Bottom Nav Bar -->
+        <script src="/dist/scripts/frames/bottom_nav.js"></script>
+
+    </div>
+
+    <!-- contents -->
+    <div>
+        <!-- background-image -->
+        <div class="absolute top-0 left-0 w-full h-full -z-10">
+            <img class="w-full object-cover bg-green-50 opacity-50" src="/assets/Topographic bg.png" alt="background">
+        </div>
+
+        <div class="bg-pink-50 mt-20 mx-4 mb-14 rounded-t-xl">
+            <h2 class="text-3xl font-bold text-center text-green-800 pt-6">Memories</h2>
+            <div class="mt-2">
+                <div class=" py-4 bg-pink-50 rounded-t-xl">
+                    <div class="text-xl flex items-center ps-4">
+                        <a>Gallery</a>
+                        <a class="ml-3">&#8594;</a>
+                    </div>
+                    <div id="image-container" class="overflow-y-auto p-2 flex flex-col gap-2 max-h-96">
+                    </div>
+                </div>
+                <script src="/dist/scripts/memories/gallery.js"></script>
+            </div>
+
+
+            <div class="mt-2">
+                <div class=" py-4 bg-pink-50 rounded-t-xl">
+                    <div class="text-xl flex items-center ps-4">
+                        <a href="#">Music</a>
+                        <a href="#" class="ml-3 text-blue-500">&#8594;</a>
+                    </div>
+                    <div id="music-container" class="overflow-y-auto p-2 flex flex-wrap gap-2 max-h-96">
+                        <!-- Music images will be inserted here by the JS -->
+                    </div>
+                    <script src="/dist/scripts/memories/music.js"></script>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <div class=" py-4 bg-pink-50 rounded-t-xl">
+                    <div class="text-xl flex items-center ps-4">
+                        <a href="#">Letter</a>
+                        <a href="#" class="ml-3 text-blue-500">&#8594;</a>
+                    </div>
+                    <div id="letter-container" class="overflow-y-auto p-2 flex flex-wrap gap-2">
+                    </div>
+                    <script src="/dist/scripts/memories/letter.js"></script>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <div class=" py-4 bg-pink-50 rounded-t-xl">
+                    <div class="text-xl flex items-center ps-4">
+                        <a href="#">Gratitude Letters</a>
+                        <a href="#" class="ml-3 text-blue-500">&#8594;</a>
+                    </div>
+                    <div id="gratitude-container" class="overflow-x-auto p-2 flex gap-4">
+                        <!-- Gratitude letters will be inserted here dynamically -->
+                    </div>
+                    <script src="/dist/scripts/memories/gratitude.js"></script>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

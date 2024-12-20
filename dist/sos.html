@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+    <!-- bars -->
+    <div>
+        <!-- Top Nav Bar -->
+        <script src="/dist/scripts/frames/top_nav.js"></script>
+
+        <!-- Right Side Menu (Initially hidden on small screens) -->
+        <script src="/dist/scripts/frames/side_menu.js"></script>
+
+        <!-- Bottom Nav Bar -->
+        <script src="/dist/scripts/frames/bottom_nav.js"></script>
+    </div>
+
+    <!-- contents -->
+    <div>
+        <div class="absolute top-0 left-0 w-full h-full -z-10">
+            <img class="w-full h-full object-cover bg-green-50 opacity-50" src="/assets/Topographic bg.png"
+                alt="background">
+            <img class="w-full h-full object-cover bg-green-50 opacity-50" src="/assets/Topographic bg.png"
+                alt="background">
+        </div>
+        <!-- Page Content -->
+        <div class="mx-6 my-16">
+            <!-- Title -->
+            <div class="text-center mb-6">
+                <h1 class="text-4xl font-extrabold text-emerald-700">Calm Support</h1>
+                <p class="text-lg text-gray-600 mt-2">
+                    Access tools and resources to guide you through moments of distress.
+                </p>
+            </div>
+            <!-- Emergency Contact Options -->
+            <div class="bg-red-50 p-8 rounded-lg shadow-lg mb-10">
+                <h2 class="text-2xl font-semibold text-red-800 mb-6">Emergency Contact Options</h2>
+                <div class="space-y-4">
+                    <!-- Contact Trusted People -->
+                    <div class="flex items-start gap-4">
+                        <img class="w-12 h-12" src="/assets/SOS/Contact.png" alt="Contact">
+                        <div>
+                            <p class="text-gray-700">
+                                <strong>Contact Trusted People:</strong> Add and quickly call or text family, friends,
+                                or therapists.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Share Location -->
+                    <div class="flex items-start gap-4">
+                        <img class="w-12 h-12" src="/assets/SOS/Location.png" alt="Location">
+                        <div>
+                            <p class="text-gray-700">
+                                <strong>Share Location:</strong> Share your location with trusted contacts in case of
+                                emergency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List of Contacts -->
+                <div class="mt-8">
+                    <h3 class="text-xl font-medium text-red-700 mb-4">Saved Contacts</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between bg-red-100 p-4 rounded-md shadow-sm">
+                            <div>
+                                <p class="text-gray-800 font-semibold">John Doe</p>
+                                <p class="text-gray-600 text-sm">+1 234 567 890</p>
+                            </div>
+                            <div class="flex space-x-3">
+                                <button
+                                    class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                                    Call
+                                </button>
+                                <button
+                                    class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                                    Message
+                                </button>
+                            </div>
+                        </li>
+                        <li class="flex items-center justify-between bg-red-100 p-4 rounded-md shadow-sm">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Jane Smith</p>
+                                <p class="text-gray-600 text-sm">+1 987 654 321</p>
+                            </div>
+                            <div class="flex space-x-3">
+                                <button
+                                    class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                                    Call
+                                </button>
+                                <button
+                                    class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                                    Message
+                                </button>
+                            </div>
+                        </li>
+                        <li class="flex items-center justify-between bg-red-100 p-4 rounded-md shadow-sm">
+                            <div>
+                                <p class="text-gray-800 font-semibold">Sebastian Smith</p>
+                                <p class="text-gray-600 text-sm">+1  654 987 321</p>
+                            </div>
+                            <div class="flex space-x-3">
+                                <button
+                                    class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                                    Call
+                                </button>
+                                <button
+                                    class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                                    Message
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="mt-6 px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+                        Add More Contacts
+                    </button>
+                </div>
+            </div>
+            <!-- Crisis Hotlines -->
+            <div class="bg-yellow-50 p-8 rounded-lg shadow-lg mb-10">
+                <h2 class="text-2xl font-semibold text-yellow-800 mb-4">Crisis Hotlines</h2>
+                <p class="text-gray-700 mb-6">
+                    Find helplines tailored to your location for mental health, suicide prevention, or domestic violence
+                    support.
+                </p>
+                <button class="px-6 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition">
+                    View Helplines
+                </button>
+            </div>
+            <!-- Quick Coping Tools -->
+            <div class="bg-blue-50 p-8 rounded-lg shadow-lg mb-10">
+                <h2 class="text-2xl font-semibold text-blue-800 mb-6">Quick Coping Tools</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <img class="w-14 h-14" src="/assets/SOS/Breath.png" alt="Breathing Exercises">
+                        <p class="text-gray-700">
+                            <strong>Breathing Exercises:</strong> Follow calming breathing techniques with haptic
+                            feedback.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-14 h-14" src="/assets/SOS/Audio.png" alt="Grounding Exercises">
+                        <p class="text-gray-700">
+                            <strong>Grounding Exercises:</strong> Practice the 5-4-3-2-1 sensory grounding method.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-Time Chat Support -->
+            <div class="bg-purple-50 p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-purple-800 mb-4">Real-Time Chat Support</h2>
+                <p class="text-gray-700 mb-6">
+                    Use our in-app chatbot for basic support and suggestions.
+                </p>
+                <button class="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                    Chat Now
+                </button>
+                <p class="text-red-600 text-sm mt-4">
+                    <strong>Note:</strong> This is not a substitute for professional help.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
