@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="w-full flex justify-between items-center">
                 <!-- Left Side Icons -->
                 <div class="m-1 flex items-center justify-between w-28">
-                    <img class="w-6" src="./assets/Nav/Nav =Home.png" onclick="window.location.href='home.html';" alt="home">
+                    <img class="w-6" src="./assets/Nav/Nav =Home.png" onclick="window.location.href='./index.html';" alt="home">
                     <img class="w-6" src="./assets/Nav/Nav =Recommendation.png" onclick="window.location.href='recommendation.html';" alt="recommendation">
                 </div>
 
