@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     const audioData = [
-        { src: "/assets/add.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" },
-        { src: "/assets/music.png" }
+        { src: "./assets/add.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" },
+        { src: "./assets/music.png" }
     ];
 
     // Get the image container
