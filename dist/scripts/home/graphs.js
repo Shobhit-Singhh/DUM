@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const imageCaptionData = [
         { 
-            "src": "/assets/Graph/graph1.png", 
+            "src": "./assets/Graph/graph1.png", 
             "caption": "Beats per minute (BPM)"
         },
         { 
-            "src": "/assets/Graph/graph3.png",
+            "src": "./assets/Graph/graph3.png",
             "caption": "Daily Blood Pressure (BP) ranges"
         },
         { 
-            "src": "/assets/Graph/graph2.png",
+            "src": "./assets/Graph/graph2.png",
             "caption": "Daily steps Count"
         },
         { 
-            "src": "/assets/Graph/graph1.png", 
+            "src": "./assets/Graph/graph1.png", 
             "caption": "Daily Sleep Duration"
         }
     ];
