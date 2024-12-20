@@ -1,15 +1,15 @@
 const reminderCardsData = [
     {
         title: "Stay Hydrated",
-        icon: "./assets/Reminder Cards/Reminder=Water.png",
+        icon: "/assets/Reminder Cards/Reminder=Water.png",
     },
     {
         title: "Take a Break",
-        icon: "./assets/Reminder Cards/Reminder=Break.png",
+        icon: "/assets/Reminder Cards/Reminder=Break.png",
     },
     {
         title: "Deep Breaths",
-        icon: "./assets/Reminder Cards/Reminder=Breath.png",
+        icon: "/assets/Reminder Cards/Reminder=Breath.png",
     },
     {
         title: "Eye Rest",
