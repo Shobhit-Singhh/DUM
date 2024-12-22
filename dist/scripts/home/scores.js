@@ -17,7 +17,6 @@ const scores = [
     { icon: "./assets/Score/icon 16.png", percentage: 65, points: "+1 pts" },
 ];
 
-
 // Render Scores Dynamically
 const scoreList = document.getElementById("score-list");
 scores.forEach((score, index) => {
@@ -28,8 +27,8 @@ scores.forEach((score, index) => {
         <div id="progress-circle-${index}" class="absolute top-1/2 left-1/2 w-14 h-14 rounded-full transform -translate-x-1/2 -translate-y-1/2">
             <div class="w-full h-full rounded-full"></div>
         </div>
-        <img class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2" src="./assets/Score/Score Ring.png" alt="Score Ring">
-        <img class="absolute top-1/2 left-1/2 w-18 h-18 object-cover transform -translate-x-1/2 -translate-y-1/2" src="${score.icon}" alt="Icon">
+        <img class="absolute top-1/2 left-1/2  object-cover transform -translate-x-1/2 -translate-y-1/2" src="./assets/Score/Score Ring.png" alt="Score Ring">
+        <img class="absolute top-1/2 left-1/2 object-cover transform -translate-x-1/2 -translate-y-1/2" src="${score.icon}" alt="Icon">
     </div>
     <div class="-mt-2 z-10">
         <a class="border-2 border-blue-500 bg-blue-200 rounded-lg text-xs px-1 py-1">${score.points}</a>
